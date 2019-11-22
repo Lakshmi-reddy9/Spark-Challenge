@@ -19,7 +19,6 @@ public final class App {
     // setMaster to local and setAppName to Challenge
     SparkConf sparkConf = new SparkConf().setMaster("local").setAppName("Challenge");
 
-    // define a new JavaSparkContext, pass in the spark configuration object
     JavaSparkContext sparkContext = new JavaSparkContext(sparkConf);
 
     // use sparkContext.textFile() to read data into RDD given the fileName provided
